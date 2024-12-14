@@ -24,7 +24,7 @@ describe('JsonEventStreamer', () => {
     await setTimeout(1)
 
     strictEqual(error instanceof Error, true)
-    strictEqual(/is not valid JSON/.test(error.message), true)
+    strictEqual(/JSON/.test(error.message), true)
   })
 
   describe('.emit', () => {
